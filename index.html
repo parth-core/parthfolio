@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parth Tiwari — AI Engineer & Data Scientist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-logo">PT<span class="dot">.</span></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-noise"></div>
+    <div class="hero-content">
+      <div class="hero-badge" id="heroBadge">
+        <span class="badge-dot"></span>Available for opportunities
+      </div>
+      <h1 class="hero-name" id="heroName">
+        <span class="name-first">Parth</span>
+        <span class="name-last">Tiwari</span>
+      </h1>
+      <div class="hero-titles" id="heroTitles">
+        <span class="title-item">AI Engineer</span>
+        <span class="title-sep">·</span>
+        <span class="title-item">Data Scientist</span>
+        <span class="title-sep">·</span>
+        <span class="title-item">GenAI Developer</span>
+      </div>
+      <p class="hero-tagline" id="heroTagline">Building intelligent systems that turn data into decisions.</p>
+      <div class="hero-buttons" id="heroButtons">
+        <a href="#projects" class="btn btn-primary"><span>View Projects</span><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#contact" class="btn btn-outline"><span>Contact Me</span><i class="fa-solid fa-paper-plane"></i></a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" id="heroScroll">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-eyebrow reveal">About Me</div>
+      <h2 class="section-title reveal">Crafting Intelligence,<br /><em>One Model at a Time.</em></h2>
+      <div class="about-grid">
+        <div class="about-bio reveal">
+          <p>I am an AI and software developer focused on building intelligent applications, data-driven systems, and scalable backend solutions. My work involves developing AI agents, retrieval-augmented generation (RAG) systems, and data analysis tools that help extract insights from complex datasets.</p>
+          <p>I enjoy combining machine learning, cloud technologies, and modern web development to create practical, high-impact solutions.</p>
+          <div class="about-stats">
+            <div class="stat reveal-up"><span class="stat-num">4+</span><span class="stat-label">Projects Shipped</span></div>
+            <div class="stat reveal-up"><span class="stat-num">2+</span><span class="stat-label">Years in AI</span></div>
+            <div class="stat reveal-up"><span class="stat-num">8.64</span><span class="stat-label">Masters CGPI</span></div>
+          </div>
+        </div>
+        <div class="about-edu">
+          <h3 class="subsection-label reveal">Education</h3>
+          <div class="edu-card reveal-up">
+            <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="edu-info">
+              <h4>Master of Computer Applications</h4>
+              <p class="edu-school">Bharati Vidyapeeth Institute of Management and IT, Mumbai</p>
+              <p class="edu-meta">Aug 2023 – Jun 2025</p>
+              <span class="edu-badge">CGPI: 8.64</span>
+            </div>
+          </div>
+          <div class="edu-card reveal-up">
+            <div class="edu-icon"><i class="fa-solid fa-atom"></i></div>
+            <div class="edu-info">
+              <h4>Bachelor of Science — Mathematics</h4>
+              <p class="edu-school">V.P.M.'s B.N. Bandodkar College of Science, Mumbai</p>
+              <p class="edu-meta">Jul 2020 – Apr 2023</p>
+              <span class="edu-badge">CGPI: 8.81</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section section-tint">
+    <div class="container">
+      <div class="section-eyebrow reveal">Skills</div>
+      <h2 class="section-title reveal">Tech Stack &<br /><em>Expertise.</em></h2>
+      <div class="skills-grid">
+        <div class="skill-category reveal-up">
+          <div class="skill-cat-header"><div class="skill-cat-icon"><i class="fa-solid fa-code"></i></div><h3>Languages</h3></div>
+          <div class="skill-pills"><span class="pill">Python</span></div>
+        </div>
+        <div class="skill-category reveal-up">
+          <div class="skill-cat-header"><div class="skill-cat-icon"><i class="fa-solid fa-layer-group"></i></div><h3>Frameworks &amp; Tools</h3></div>
+          <div class="skill-pills">
+            <span class="pill">Flask</span><span class="pill">Pandas</span>
+            <span class="pill">IBM watsonx Assistant</span><span class="pill">IBM watsonx Studio</span><span class="pill">IBM watsonx Orchestrate</span>
+          </div>
+        </div>
+        <div class="skill-category reveal-up skill-featured">
+          <div class="skill-cat-header"><div class="skill-cat-icon featured-icon"><i class="fa-solid fa-brain"></i></div><h3>GenAI &amp; LLMs</h3></div>
+          <div class="skill-pills">
+            <span class="pill pill-blue">Prompt Engineering</span><span class="pill pill-blue">LLM Integration</span>
+            <span class="pill pill-blue">RAG Systems</span><span class="pill pill-blue">Vector Databases</span><span class="pill pill-blue">Agentic AI</span>
+          </div>
+        </div>
+        <div class="skill-category reveal-up">
+          <div class="skill-cat-header"><div class="skill-cat-icon"><i class="fa-solid fa-database"></i></div><h3>Databases</h3></div>
+          <div class="skill-pills"><span class="pill">MySQL</span><span class="pill">SQL Server</span></div>
+        </div>
+        <div class="skill-category reveal-up">
+          <div class="skill-cat-header"><div class="skill-cat-icon"><i class="fa-solid fa-cloud"></i></div><h3>Cloud Platforms</h3></div>
+          <div class="skill-pills"><span class="pill">IBM Cloud</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-eyebrow reveal">Experience</div>
+      <h2 class="section-title reveal">Where I've<br /><em>Built Things.</em></h2>
+      <div class="timeline">
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Jul 2025 – Present</div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div><h3>Data Scientist</h3><span class="timeline-company">Veracitiz Solutions</span></div>
+              <span class="timeline-badge">Current</span>
+            </div>
+            <ul class="timeline-points">
+              <li>Designed and built an AI-powered invoice reconciliation system, automating validation, matching, and exception handling.</li>
+              <li>Developed agentic AI workflows for supply chain use cases using IBM watsonx Orchestrate.</li>
+              <li>Contributed to end-to-end invoice processing pipelines using Python, improving data accuracy.</li>
+            </ul>
+            <div class="timeline-tags"><span>IBM watsonx</span><span>Python</span><span>Agentic AI</span></div>
+          </div>
+        </div>
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Jan 2025 – Jun 2025</div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div><h3>Data Science Intern</h3><span class="timeline-company">Veracitiz Solutions</span></div>
+            </div>
+            <ul class="timeline-points">
+              <li>Built an AI-powered pipeline to extract data from PDF invoices using PDF parsing, prompt engineering, and JSON handling.</li>
+              <li>Designed and implemented a RAG chatbot by integrating vector databases with a frontend interface.</li>
+              <li>Built a conversational NLP chatbot allowing users to upload tabular data (CSV/Excel) and query it in natural language.</li>
+            </ul>
+            <div class="timeline-tags"><span>RAG</span><span>NLP</span><span>Vector DB</span><span>Flask</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section section-tint">
+    <div class="container">
+      <div class="section-eyebrow reveal">Projects</div>
+      <h2 class="section-title reveal">What I've<br /><em>Shipped.</em></h2>
+      <div class="projects-grid">
+        <div class="project-card reveal-up">
+          <div class="project-top"><span class="project-num">01</span><div class="project-icon"><i class="fa-solid fa-network-wired"></i></div></div>
+          <h3>Agentic Supply Chain Workflows</h3>
+          <p>Automated task execution and decision support for supply chain management using agentic AI with multi-step reasoning loops.</p>
+          <div class="project-tech"><span>IBM watsonx Orchestrate</span><span>Python</span></div>
+          <div class="project-footer"><span class="project-arrow"><i class="fa-solid fa-arrow-up-right"></i></span></div>
+        </div>
+        <div class="project-card reveal-up">
+          <div class="project-top"><span class="project-num">02</span><div class="project-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div></div>
+          <h3>AI Invoice Reconciliation System</h3>
+          <p>End-to-end pipeline to extract, validate, and match data between PDF invoices and purchase orders with automated exception handling.</p>
+          <div class="project-tech"><span>Python</span><span>LLMs</span><span>JSON</span></div>
+          <div class="project-footer"><span class="project-arrow"><i class="fa-solid fa-arrow-up-right"></i></span></div>
+        </div>
+        <div class="project-card reveal-up">
+          <div class="project-top"><span class="project-num">03</span><div class="project-icon"><i class="fa-solid fa-comments"></i></div></div>
+          <h3>Context-Aware RAG Chatbot</h3>
+          <p>Interactive application that accurately answers user queries by retrieving relevant context from uploaded documents using vector search.</p>
+          <div class="project-tech"><span>Python</span><span>Vector Databases</span><span>GenAI</span></div>
+          <div class="project-footer"><span class="project-arrow"><i class="fa-solid fa-arrow-up-right"></i></span></div>
+        </div>
+        <div class="project-card reveal-up">
+          <div class="project-top"><span class="project-num">04</span><div class="project-icon"><i class="fa-solid fa-table-cells"></i></div></div>
+          <h3>Tabular Data Q&amp;A Bot</h3>
+          <p>A conversational interface that allows users to upload CSV/Excel files and query data using natural human language with instant insights.</p>
+          <div class="project-tech"><span>NLP</span><span>Pandas</span><span>Flask</span></div>
+          <div class="project-footer"><span class="project-arrow"><i class="fa-solid fa-arrow-up-right"></i></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-eyebrow reveal">Certifications</div>
+      <h2 class="section-title reveal">Credentials &amp;<br /><em>Learning.</em></h2>
+      <div class="cert-grid">
+        <div class="cert-card reveal-up">
+          <div class="cert-icon-wrap"><i class="fa-solid fa-certificate"></i></div>
+          <div class="cert-body"><h4>Data Analysis with Python</h4><span class="cert-check"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+        </div>
+        <div class="cert-card reveal-up">
+          <div class="cert-icon-wrap"><i class="fa-solid fa-certificate"></i></div>
+          <div class="cert-body"><h4>SQL for Data Science</h4><span class="cert-check"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+        </div>
+        <div class="cert-card reveal-up cert-featured">
+          <div class="cert-icon-wrap featured"><i class="fa-solid fa-robot"></i></div>
+          <div class="cert-body"><h4>Specialization in Generative AI Learning Path</h4><span class="cert-check"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+        </div>
+        <div class="cert-card reveal-up">
+          <div class="cert-icon-wrap"><i class="fa-solid fa-scale-balanced"></i></div>
+          <div class="cert-body"><h4>Introduction to Responsible AI</h4><span class="cert-check"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" class="section section-tint">
+    <div class="container">
+      <div class="section-eyebrow reveal">Blog</div>
+      <h2 class="section-title reveal">Thoughts &amp;<br /><em>Writings.</em></h2>
+      <div class="blog-grid">
+        <article class="blog-card blog-card-featured reveal-up">
+          <div class="blog-tag">GenAI</div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span><i class="fa-regular fa-calendar"></i> June 2025</span>
+              <span><i class="fa-regular fa-clock"></i> 8 min read</span>
+            </div>
+            <h3>Understanding Retrieval-Augmented Generation: How RAG Makes LLMs Smarter</h3>
+            <p>A deep dive into how RAG systems combine the power of vector databases with large language models to deliver accurate, grounded responses — and why it matters for enterprise AI.</p>
+            <a href="#" class="blog-read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="blog-card reveal-up">
+          <div class="blog-tag">Agentic AI</div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span><i class="fa-regular fa-calendar"></i> May 2025</span>
+              <span><i class="fa-regular fa-clock"></i> 6 min read</span>
+            </div>
+            <h3>Agentic AI Workflows: Beyond Single-Turn Prompts</h3>
+            <p>Exploring how multi-step AI agents with planning and tool-use capabilities are transforming automation in supply chain and finance.</p>
+            <a href="#" class="blog-read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="blog-card reveal-up">
+          <div class="blog-tag">Data Science</div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span><i class="fa-regular fa-calendar"></i> March 2025</span>
+              <span><i class="fa-regular fa-clock"></i> 5 min read</span>
+            </div>
+            <h3>Prompt Engineering Patterns for Structured Data Extraction</h3>
+            <p>Practical techniques for extracting structured JSON from unstructured documents using LLMs with high accuracy and reliability.</p>
+            <a href="#" class="blog-read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="blog-card reveal-up">
+          <div class="blog-tag">Python</div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span><i class="fa-regular fa-calendar"></i> January 2025</span>
+              <span><i class="fa-regular fa-clock"></i> 4 min read</span>
+            </div>
+            <h3>Building Conversational Interfaces for Tabular Data with Pandas &amp; NLP</h3>
+            <p>A walkthrough of architecting a natural language query system on top of CSV/Excel files, bridging the gap between raw data and human insight.</p>
+            <a href="#" class="blog-read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+      <div class="blog-cta reveal">
+        <a href="#" class="btn btn-outline">View All Posts <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-eyebrow reveal">Contact</div>
+      <h2 class="section-title reveal">Let's Build<br /><em>Something Great.</em></h2>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="contact-intro">Whether you have a project idea, a role to discuss, or just want to connect — I'm all ears.</p>
+          <div class="contact-items">
+            <a href="mailto:parth4tiwari@gmail.com" class="contact-item">
+              <span class="ci-icon"><i class="fa-solid fa-envelope"></i></span><span>parth4tiwari@gmail.com</span>
+            </a>
+            <a href="tel:+917304047744" class="contact-item">
+              <span class="ci-icon"><i class="fa-solid fa-phone"></i></span><span>+91 7304047744</span>
+            </a>
+            <div class="contact-item">
+              <span class="ci-icon"><i class="fa-solid fa-location-dot"></i></span><span>Thane (W), Mumbai</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <form class="contact-form reveal-up" id="contactForm" onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="femail">Email</label>
+            <input type="email" id="femail" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="fmessage">Message</label>
+            <textarea id="fmessage" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span>Send Message</span><i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fa-solid fa-circle-check"></i> Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">PT<span class="dot">.</span></div>
+      <p class="footer-copy">&copy; 2025 Parth Tiwari. Crafted with precision.</p>
+      <div class="footer-links">
+        <a href="#hero">Top</a>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#projects">Projects</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
